@@ -1,0 +1,174 @@
+[
+  {
+    "quelle": "seed",
+    "sortierung": 1,
+    "fahrzeug": {
+      "marke": "VW",
+      "modell": "Golf 7 1.4 TSI",
+      "jahr": 2016,
+      "farbe": "silber"
+    },
+    "bildbeschreibung": "Scharfes Tageslichtfoto, ganzes Fahrzeug von schräg vorne links, silberner VW Golf 7, deutlicher Kratzer auf der Fahrertür, Kennzeichen lesbar.",
+    "ergebnis": {
+      "qualitaet": {
+        "ok": true,
+        "score": 88,
+        "maengel": [],
+        "rat": "Top Aufnahme — Tageslicht und ganzes Fahrzeug im Bild, genau so weitermachen."
+      },
+      "echtheit": {
+        "ok": true,
+        "verdacht": [],
+        "begruendung": "Privates Foto mit natürlichem Hintergrund und plausiblen Details, keine Auffälligkeiten."
+      },
+      "inhalt": {
+        "ok": false,
+        "kennzeichen_sichtbar": true,
+        "personen_sichtbar": false,
+        "dokumente_sichtbar": false,
+        "massnahme": "verpixeln"
+      },
+      "konsistenz": {
+        "ok": true,
+        "modell_passt": true,
+        "farbe_passt": true,
+        "abweichung": null
+      },
+      "zustand": {
+        "sichtbare_maengel": ["Kratzer Fahrertür, ca. 15 cm, bis auf Grundierung"],
+        "hinweis_inserat": "Auf der Fahrertür befindet sich ein gut sichtbarer Kratzer von rund 15 cm Länge."
+      },
+      "gesamt": "nachbessern",
+      "perspektive": "seite_links"
+    }
+  },
+  {
+    "quelle": "seed",
+    "sortierung": 2,
+    "fahrzeug": {
+      "marke": "BMW",
+      "modell": "320d Touring",
+      "jahr": 2019,
+      "farbe": "schwarz"
+    },
+    "bildbeschreibung": "Stark unterbelichtetes, verwackeltes Foto in einer Tiefgarage, nur die Front teilweise erkennbar, kein Kennzeichen lesbar.",
+    "ergebnis": {
+      "qualitaet": {
+        "ok": false,
+        "score": 22,
+        "maengel": ["zu dunkel", "unscharf", "fahrzeug_abgeschnitten"],
+        "rat": "Bitte das Auto bei Tageslicht draussen fotografieren, zwei bis drei Meter Abstand, das ganze Fahrzeug ins Bild nehmen und das Handy beim Auslösen ruhig halten."
+      },
+      "echtheit": {
+        "ok": true,
+        "verdacht": [],
+        "begruendung": "Typisches spontanes Handyfoto, keine Hinweise auf Fremdmaterial."
+      },
+      "inhalt": {
+        "ok": true,
+        "kennzeichen_sichtbar": false,
+        "personen_sichtbar": false,
+        "dokumente_sichtbar": false,
+        "massnahme": "keine"
+      },
+      "konsistenz": {
+        "ok": true,
+        "modell_passt": true,
+        "farbe_passt": true,
+        "abweichung": null
+      },
+      "zustand": {
+        "sichtbare_maengel": [],
+        "hinweis_inserat": "Der Zustand ist auf diesem Foto nicht beurteilbar; bitte besseres Bildmaterial nachreichen."
+      },
+      "gesamt": "nachbessern",
+      "perspektive": "front"
+    }
+  },
+  {
+    "quelle": "seed",
+    "sortierung": 3,
+    "fahrzeug": {
+      "marke": "Audi",
+      "modell": "A4 Avant 2.0 TDI",
+      "jahr": 2018,
+      "farbe": "blau"
+    },
+    "bildbeschreibung": "Perfekt ausgeleuchtetes Studiofoto eines roten Audi A4 vor weissem Hintergrund mit Wasserzeichen eines Autohauses, wirkt wie Herstellermaterial.",
+    "ergebnis": {
+      "qualitaet": {
+        "ok": true,
+        "score": 95,
+        "maengel": [],
+        "rat": "Bitte eigene Fotos deines tatsächlichen Fahrzeugs hochladen — bei Tageslicht, alle Seiten, echte Umgebung."
+      },
+      "echtheit": {
+        "ok": false,
+        "verdacht": ["stockfoto", "fremdinserat"],
+        "begruendung": "Studiohintergrund und fremdes Wasserzeichen deuten auf Hersteller- oder Händlermaterial statt auf das inserierte Fahrzeug hin."
+      },
+      "inhalt": {
+        "ok": true,
+        "kennzeichen_sichtbar": false,
+        "personen_sichtbar": false,
+        "dokumente_sichtbar": false,
+        "massnahme": "neu_aufnehmen"
+      },
+      "konsistenz": {
+        "ok": false,
+        "modell_passt": true,
+        "farbe_passt": false,
+        "abweichung": "Fahrzeug im Bild ist rot, in den Angaben steht blau."
+      },
+      "zustand": {
+        "sichtbare_maengel": [],
+        "hinweis_inserat": "Kein echtes Foto des inserierten Fahrzeugs — Zustand nicht beurteilbar."
+      },
+      "gesamt": "abgelehnt",
+      "perspektive": "front"
+    }
+  },
+  {
+    "quelle": "seed",
+    "sortierung": 4,
+    "fahrzeug": {
+      "marke": "Skoda",
+      "modell": "Octavia Combi",
+      "jahr": 2021,
+      "farbe": "grau"
+    },
+    "bildbeschreibung": "Scharfes Tageslichtfoto des Hecks, grauer Octavia Combi, kleine Delle am Heckdeckel sichtbar, Kennzeichen bereits verpixelt, keine Personen.",
+    "ergebnis": {
+      "qualitaet": {
+        "ok": true,
+        "score": 84,
+        "maengel": [],
+        "rat": "Gute Aufnahme — für die weiteren Bilder gleiche Lichtverhältnisse beibehalten."
+      },
+      "echtheit": {
+        "ok": true,
+        "verdacht": [],
+        "begruendung": "Natürliche Umgebung und konsistente Details, klar ein eigenes Foto."
+      },
+      "inhalt": {
+        "ok": true,
+        "kennzeichen_sichtbar": false,
+        "personen_sichtbar": false,
+        "dokumente_sichtbar": false,
+        "massnahme": "keine"
+      },
+      "konsistenz": {
+        "ok": true,
+        "modell_passt": true,
+        "farbe_passt": true,
+        "abweichung": null
+      },
+      "zustand": {
+        "sichtbare_maengel": ["Delle Heckdeckel rechts, ca. 4 cm, ohne Lackschaden"],
+        "hinweis_inserat": "Am Heckdeckel rechts ist eine kleine Delle von rund 4 cm ohne Lackschaden vorhanden."
+      },
+      "gesamt": "geprueft",
+      "perspektive": "heck"
+    }
+  }
+]

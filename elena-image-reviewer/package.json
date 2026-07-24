@@ -1,0 +1,18 @@
+{
+  "name": "@geniehub/elena-image-reviewer",
+  "version": "0.1.0",
+  "description": "Elena, die Bildprüferin von CarGenie: prüft Fahrzeugfotos vor Inserat und KI-Studio-Sequenz.",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "@supabase/supabase-js": "^2.45.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "@types/node": "^20.0.0"
+  }
+}
