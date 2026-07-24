@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "updated_at": "2026-07-24",
+  "hinweis": "Wird von der Lernschleife gepflegt. Manuelle Edits nur über Review. Max. 8 Beispiele — älteste/schwächste fliegen raus (siehe README).",
+  "beispiele": [
+    {
+      "id": "seed-001",
+      "quelle": "seed",
+      "fahrzeug": { "marke": "VW", "modell": "Golf 7", "farbe": "grau", "jahrgang": 2016 },
+      "bildbeschreibung": "Frontalaufnahme bei Tageslicht, ganzes Fahrzeug im Bild, Kennzeichen lesbar, Kratzer am vorderen Stossfänger links sichtbar.",
+      "ausgabe": {
+        "qualitaet": { "ok": true, "score": 88, "maengel": [], "rat": "" },
+        "echtheit": { "ok": true, "verdacht": [], "begruendung": "Natürliche Aufnahme, konsistente Schatten und Reflexionen, plausibler Kontext." },
+        "inhalt": { "ok": false, "kennzeichen_sichtbar": true, "personen_sichtbar": false, "dokumente_sichtbar": false, "massnahme": "verpixeln" },
+        "konsistenz": { "ok": true, "modell_passt": true, "farbe_passt": true, "abweichung": null },
+        "zustand": { "sichtbare_maengel": ["Kratzer Stossfänger vorne links"], "hinweis_inserat": "Am vorderen Stossfänger links ist ein Kratzer sichtbar." },
+        "gesamt": "nachbessern",
+        "perspektive": "front"
+      },
+      "lehre": "Lesbares Kennzeichen ist ein Inhaltsproblem mit Massnahme 'verpixeln' — kein Ablehnungsgrund. Der Kratzer wird trotzdem ehrlich im Zustand benannt."
+    },
+    {
+      "id": "seed-002",
+      "quelle": "seed",
+      "fahrzeug": { "marke": "BMW", "modell": "320d Touring", "farbe": "schwarz", "jahrgang": 2019 },
+      "bildbeschreibung": "Perfekt ausgeleuchtetes Studiofoto mit weissem Hintergrund und Wasserzeichen eines anderen Portals, Fahrzeug makellos.",
+      "ausgabe": {
+        "qualitaet": { "ok": true, "score": 95, "maengel": [], "rat": "" },
+        "echtheit": { "ok": false, "verdacht": ["stockfoto", "fremdinserat"], "begruendung": "Studiohintergrund und fremdes Wasserzeichen deuten auf ein übernommenes Hersteller- oder Portalfoto statt auf das angebotene Fahrzeug." },
+        "inhalt": { "ok": true, "kennzeichen_sichtbar": false, "personen_sichtbar": false, "dokumente_sichtbar": false, "massnahme": "keine" },
+        "konsistenz": { "ok": true, "modell_passt": true, "farbe_passt": true, "abweichung": null },
+        "zustand": { "sichtbare_maengel": [], "hinweis_inserat": "" },
+        "gesamt": "abgelehnt",
+        "perspektive": "seite_links"
+      },
+      "lehre": "Hohe Bildqualität rettet ein unechtes Foto nicht: echtheit.ok=false führt immer zu 'abgelehnt' — mit Begründung und implizitem Rat, eigene Fotos zu machen."
+    },
+    {
+      "id": "seed-003",
+      "quelle": "seed",
+      "fahrzeug": { "marke": "Škoda", "modell": "Octavia Combi", "farbe": "blau", "jahrgang": 2021 },
+      "bildbeschreibung": "Seitenaufnahme rechts bei Dämmerung, leicht unscharf, Fahrzeug angeschnitten (Heck fehlt), keine Personen oder Kennzeichen erkennbar.",
+      "ausgabe": {
+        "qualitaet": { "ok": false, "score": 41, "maengel": ["unscharf", "zu dunkel", "fahrzeug_angeschnitten"], "rat": "Bitte bei Tageslicht neu fotografieren, etwas zurücktreten, damit das ganze Fahrzeug im Bild ist, und das Handy beim Auslösen ruhig halten." },
+        "echtheit": { "ok": true, "verdacht": [], "begruendung": "Alltagsaufnahme ohne Manipulationshinweise." },
+        "inhalt": { "ok": true, "kennzeichen_sichtbar": false, "personen_sichtbar": false, "dokumente_sichtbar": false, "massnahme": "keine" },
+        "konsistenz": { "ok": true, "modell_passt": true, "farbe_passt": true, "abweichung": null },
+        "zustand": { "sichtbare_maengel": [], "hinweis_inserat": "Zustand auf diesem Bild nicht abschliessend beurteilbar (zu dunkel)." },
+        "gesamt": "nachbessern",
+        "perspektive": "seite_rechts"
+      },
+      "lehre": "Qualitätsprobleme, die der Nutzer selbst lösen kann → 'nachbessern' mit konkretem, freundlichem Rat (Licht, Abstand, Stabilität)."
+    },
+    {
+      "id": "seed-004",
+      "quelle": "seed",
+      "fahrzeug": { "marke": "Toyota", "modell": "Yaris", "farbe": "rot", "jahrgang": 2018 },
+      "bildbeschreibung": "Scharfes Tageslichtfoto eines weissen SUV, obwohl ein roter Kleinwagen inseriert ist.",
+      "ausgabe": {
+        "qualitaet": { "ok": true, "score": 90, "maengel": [], "rat": "" },
+        "echtheit": { "ok": true, "verdacht": [], "begruendung": "Aufnahme wirkt authentisch, passt aber nicht zum Inserat." },
+        "inhalt": { "ok": true, "kennzeichen_sichtbar": false, "personen_sichtbar": false, "dokumente_sichtbar": false, "massnahme": "keine" },
+        "konsistenz": { "ok": false, "modell_passt": false, "farbe_passt": false, "abweichung": "Bild zeigt einen weissen SUV, inseriert ist ein roter Toyota Yaris (Kleinwagen)." },
+        "zustand": { "sichtbare_maengel": [], "hinweis_inserat": "" },
+        "gesamt": "nachbessern",
+        "perspektive": "front"
+      },
+      "lehre": "Konsistenz-Abweichungen präzise benennen (was weicht ab). Vermutlich ein Upload-Versehen → 'nachbessern', nicht 'abgelehnt', solange keine Täuschungsabsicht erkennbar ist."
+    }
+  ]
+}
