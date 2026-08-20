@@ -35,6 +35,9 @@ elena-image-reviewer/
     └── 20260724_elena_reviews.sql
 ```
 
+`prompt/system.de.md` ist die **Single Source of Truth** für den Prompt:
+Änderungen gehören dorthin, nie in einen gerenderten Prompt.
+
 ## Verwendung
 
 ```typescript
@@ -80,6 +83,19 @@ sondern von der Lernschleife:
 
 `refreshFewshot()` läuft idealerweise als Cron (z. B. täglich) oder direkt
 nach jeder Moderator-Korrektur.
+
+### Regeln für die Beispiele
+
+- **Max. 6 Beispiele** (`MAX_FEWSHOT` in `lernschleife.ts`). Kommt ein neues
+  dazu, fliegt das älteste bzw. schwächste Nicht-Seed-Beispiel raus. Kurzer
+  Prompt schlägt vollständigen Katalog.
+- Jedes Beispiel braucht `fahrzeug`, `bildbeschreibung` und das vollständige
+  `ergebnis` im Schema; die Seeds tragen zusätzlich eine einzeilige `lehre`
+  (was der Fall lehrt).
+- Beispiele decken bewusst unterschiedliche Fälle ab (verpixeln vs. ablehnen
+  vs. nachbessern) — keine zwei Beispiele mit derselben Lehre.
+- Manuelle Edits an `fewshot.seed.json` nur via PR-Review; das aktive Set
+  pflegt ausschliesslich die Lernschleife in `elena_fewshot_beispiele`.
 
 ## Konfiguration
 
