@@ -15,7 +15,9 @@ export function renderFewshot(beispiele: FewshotBeispiel[]): string {
       (b) =>
         `<beispiel>\n<fahrzeug>${JSON.stringify(b.fahrzeug)}</fahrzeug>\n` +
         `<bild>${b.bildbeschreibung}</bild>\n` +
-        `${JSON.stringify(b.ergebnis)}\n</beispiel>`,
+        `${JSON.stringify(b.ergebnis)}\n` +
+        (b.lehre ? `<lehre>${b.lehre}</lehre>\n` : '') +
+        `</beispiel>`,
     )
     .join('\n');
 }

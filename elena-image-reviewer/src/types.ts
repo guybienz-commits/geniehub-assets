@@ -65,6 +65,8 @@ export interface FewshotBeispiel {
   fahrzeug: Fahrzeug;
   bildbeschreibung: string;
   ergebnis: ElenaReview;
+  /** One line on what the case teaches. Seed examples carry it; DB rows do not. */
+  lehre?: string;
 }
 
 const PERSPEKTIVEN: Perspektive[] = [
